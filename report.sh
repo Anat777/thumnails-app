@@ -4,6 +4,6 @@
 # generate memory usage output
 df -h > usagereports.out
 
-free -m > usagestats.out
+free -m > usagereports.out
 
 top >> usagereports.out
