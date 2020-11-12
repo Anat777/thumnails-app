@@ -1,0 +1,16 @@
+#!/bin/bash
+
+arg=$1
+
+
+if [[ $arg == "312" ]]; then
+	cp ~/creds-312/config ~/.aws/config
+	cp ~/creds-312/credentials ~/.aws/credentials
+elif [[ $arg == "tron" ]]; then
+	cp ~/creds-t/config ~/.aws/config
+	cp ~/creds-t/credentials ~/.aws/credentials
+else
+	echo "Error: invalid argument"
+	echo
+	echo -ne "Example:\n 	chaws 312\n"
+fi
