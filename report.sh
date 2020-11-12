@@ -6,3 +6,4 @@ df -h > usagereports.out
 
 free -m > usagestats.out
 
+top >> usagereports.out
